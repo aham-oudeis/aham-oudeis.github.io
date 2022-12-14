@@ -14,6 +14,12 @@
 		$main = $('#main'),
 		$main_articles = $main.children('article');
 
+		console.log("body", $body);
+		console.log("wrapper", $wrapper);
+		console.log("header", $header);
+		console.log("footer", $footer);
+		console.log("main", $main);
+		console.log("main_articles", $main_articles);
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
@@ -31,29 +37,7 @@
 			}, 100);
 		});
 
-	// Fix: Flexbox min-height bug on IE.
-		if (browser.name == 'ie') {
-
-			var flexboxFixTimeoutId;
-
-			$window.on('resize.flexbox-fix', function() {
-
-				clearTimeout(flexboxFixTimeoutId);
-
-				flexboxFixTimeoutId = setTimeout(function() {
-
-					if ($wrapper.prop('scrollHeight') > $window.height())
-						$wrapper.css('height', 'auto');
-					else
-						$wrapper.css('height', '100vh');
-
-				}, 250);
-
-			}).triggerHandler('resize.flexbox-fix');
-
-		}
-
-	// Nav.
+	// Nav. get the nav element and the nav li elements
 		var $nav = $header.children('nav'),
 			$nav_li = $nav.find('li');
 
@@ -69,7 +53,8 @@
 		var	delay = 325,
 			locked = false;
 
-		// Methods.
+		// Methods. _show method is added to the main div with id main
+		//this takes the id of the article and the initial boolean
 			$main._show = function(id, initial) {
 
 				var $article = $main_articles.filter('#' + id);
@@ -80,40 +65,40 @@
 
 				// Handle lock.
 
-					// Already locked? Speed through "show" steps w/o delays.
-						if (locked || (typeof initial != 'undefined' && initial === true)) {
+					// // Already locked? Speed through "show" steps w/o delays.
+					// 	if (locked || (typeof initial != 'undefined' && initial === true)) {
 
-							// Mark as switching.
-								$body.addClass('is-switching');
+					// 		// Mark as switching.
+					// 			$body.addClass('is-switching');
 
-							// Mark as visible.
-								$body.addClass('is-article-visible');
+					// 		// Mark as visible.
+					// 			$body.addClass('is-article-visible');
 
-							// Deactivate all articles (just in case one's already active).
-								$main_articles.removeClass('active');
+					// 		// Deactivate all articles (just in case one's already active).
+					// 			$main_articles.removeClass('active');
 
-							// Hide header, footer.
-								$header.hide();
-								$footer.hide();
+					// 		// Hide header, footer.
+					// 			$header.hide();
+					// 			$footer.hide();
 
-							// Show main, article.
-								$main.show();
-								$article.show();
+					// 		// Show main, article.
+					// 			$main.show();
+					// 			$article.show();
 
-							// Activate article.
-								$article.addClass('active');
+					// 		// Activate article.
+					// 			$article.addClass('active');
 
-							// Unlock.
-								locked = false;
+					// 		// Unlock.
+					// 			locked = false;
 
-							// Unmark as switching.
-								setTimeout(function() {
-									$body.removeClass('is-switching');
-								}, (initial ? 1000 : 0));
+					// 		// Unmark as switching.
+					// 			setTimeout(function() {
+					// 				$body.removeClass('is-switching');
+					// 			}, (initial ? 1000 : 0));
 
-							return;
+					// 		return;
 
-						}
+					// 	}
 
 					// Lock.
 						locked = true;
@@ -121,12 +106,12 @@
 				// Article already visible? Just swap articles.
 					if ($body.hasClass('is-article-visible')) {
 
-						// Deactivate current article.
+						// Deactivate current article. find the current article and deactivate it
 							var $currentArticle = $main_articles.filter('.active');
 
 							$currentArticle.removeClass('active');
 
-						// Show article.
+						// Show article. show the article that was clicked
 							setTimeout(function() {
 
 								// Hide current article.
@@ -291,12 +276,12 @@
 
 				var $this = $(this);
 
-				// Close.
-					$('<div class="close">Close</div>')
-						.appendTo($this)
-						.on('click', function() {
-							location.hash = '';
-						});
+				// // Close.
+				// 	$('<div class="close">Close</div>')
+				// 		.appendTo($this)
+				// 		.on('click', function() {
+				// 			location.hash = '';
+				// 		});
 
 				// Prevent clicks from inside article from bubbling.
 					$this.on('click', function(event) {
@@ -387,9 +372,9 @@
 
 		// Initialize.
 
-			// Hide main, articles.
-				$main.hide();
-				$main_articles.hide();
+			// show main, articles.
+				$main.show();
+				$main_articles.show();
 
 			// Initial article.
 				if (location.hash != ''
