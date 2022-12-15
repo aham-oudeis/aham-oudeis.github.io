@@ -497,7 +497,8 @@ label {
 	justify-content: space-between;
 	align-items: center;
 	height: 80%;
-	margin-bottom: 8%;
+	border-top: 2px solid;
+	padding-top: 4%;
 }
 
 .skopos-image {
