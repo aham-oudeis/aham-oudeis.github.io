@@ -501,7 +501,7 @@ label {
 
 .skopos-image img {
 	align-self: flex-end;
-	width: 100%;
+	width: 90%;
 	height: 100%;
 }
 
@@ -1449,7 +1449,7 @@ body.is-preload #header .content .inner {
 	position: relative;
 	width: 75rem;
 	max-width: 100%;
-	background-color: #485153;
+	background-color: #141b1d;
 	border-radius: 4px;
 	opacity: 0;
 }
@@ -1624,16 +1624,14 @@ body.is-preload #header .content .inner {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
 	height: 80%;
-	margin-bottom: 8%;
+	margin-bottom: 3%;
 }
 
 .other-project-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100%;
 	width: 100%;
 	align-items: center;
 }
@@ -1641,18 +1639,18 @@ body.is-preload #header .content .inner {
 .other-project-image {
 	display: flex;
 	width: 70%;
+	height: 70%;
 	flex-basis: 30%;
-	position: end;
 }
 
 .other-project-image img {
-	align-self: flex-end;
 	width: 100%;
 }
 
 .other-project-description {
 	flex: 1 2;
-	width: 70%;
+	width: 80%;
+	text-align: center;
 }
 
 @media screen and (max-width: 736px) {
