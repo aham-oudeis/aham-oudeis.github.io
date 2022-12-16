@@ -1731,6 +1731,8 @@ body.is-preload #header .content .inner {
 
 .about-me-image img {
 	width: 100%;
+	border: 4px solid white;
+	border-radius: 50%;
 }
 
 .about-me-description {
