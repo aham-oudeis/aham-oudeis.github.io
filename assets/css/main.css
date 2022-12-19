@@ -1737,10 +1737,10 @@ body.is-preload #header .content .inner {
 
 .about-me-description {
 	padding: 5%;
+	padding-left: 0;
 	flex: 1 2;
 	width: 50%;
-	align-self:center;
-	text-align: center;
+	text-align: start;
 }
 
 .about-me-description h3 {
@@ -1752,8 +1752,9 @@ body.is-preload #header .content .inner {
 		flex-direction: column;
 	}
 
-	.about-me-card {
-		padding: 0 0 3rem 0;
+	.about-me-description {
+		text-align: center;
+		width: 100%
 	}
 
 	.others article {
@@ -1808,7 +1809,7 @@ body.is-preload #header .content .inner {
 	position: relative;
 	max-width: 100%;
 	z-index: 3;
-	padding: 0;
+	padding-bottom: 4%;
 }
 
 .others article {
