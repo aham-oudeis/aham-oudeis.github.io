@@ -1,250 +1,180 @@
 <!DOCTYPE html>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <head>
-    <title>Gagan Sapkota</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-  </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Header -->
-      <header id="header">
-        <div class="logo">
-          <img src="images/headshot_gagan.png" alt="" class="icon fa-gem" />
-        </div>
-        <div class="content">
-          <div class="inner">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagan Sapkota | Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="nav-header">
             <h1>Gagan Sapkota</h1>
-            <p>
-              I am a Software Engineer based in Fremont, California. <br />
-              I have worked for several years with the Ruby and Javascript
-              ecosystems.<br />
-              Recently, I designed and developed
-              <a href="https://skopos-api-monitoring.github.io/" target="_blank"
-                ><strong>Skopos,</strong></a
-              >
-              a cloud-based application for monitoring critical API workflows.
-            </p>
-            <ul class="icons">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/gagan-sapkota-50724a238/"
-                  target="_blank"
-                  class="icon brands alt fa-linkedin-in"
-                  ><span class="label">LinkedIn</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/aham-oudeis"
-                  class="icon brands fa-github"
-                  target="_blank"
-                  ><span class="label">GitHub</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="/files/gagan_sapkota_resume.pdf"
-                  target="_blank"
-                  class="icon fa-solid fa-file-pdf"
-                  ><span class="label">Resume</span></a
-                >
-              </li>
-            </ul>
-          </div>
+            <p>Software Engineer</p>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="" id="see-more"><strong>Recent Work</strong></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        <ul class="nav-links">
+            <li><a href="#introduction" class="active">Introduction</a></li>
+            <li><a href="#work">Work History</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <!-- <li><a href="#notes">Notes</a></li> -->
+        </ul>
+        <div class="nav-footer">
+            <a href="https://github.com/aham-oudeis" title="GitHub" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/gagan-sapkota-50724a238/" title="LinkedIn" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="/files/gagan_sapkota_resume.pdf" title="Resume" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i>
+            </a>
+        </div>
+    </nav>
 
-      <!-- Main -->
-      <div id="main">
-        <!-- Other Projects -->
-        <h2 class="major">Skopos</h2>
-        <article class="active" id="projects">
-          <div class="skopos-container">
-            <div class="skopos-description">
-              <h3>
-                <p>
-                  Skopos is an API monitoring tool designed for testing
-                  <span class="orange"
-                    >multi-step API workflows in sequence</span
-                  >
-                  and
-                  <span class="orange">independent workflows in parallel</span>
+    <main class="content-area">
+        <section id="introduction" class="view">
+            <header>
+                <h2 class="section-title">Introduction</h2>
+                <p class="lead-statement">
+                    I am a software engineer specializing in the design and architecture of 
+                    <strong>resilient high-throughput distributed systems</strong>.
                 </p>
-              </h3>
-            </div>
-            <div class="skopos-image">
-              <img src="images/SKOPOS_logo_inverted.png" alt="" />
-            </div>
-          </div>
-          <div class="skopos-demo-container">
-            <div class="skopos-description">
-              <h4>
-                <p>
-                  With Skopos, a user can define multi-step tests for API
-                  workflows and execute them on demand or on schedule.
-                </p>
-              </h4>
-            </div>
-            <div class="skopos-image">
-              <video autoplay loop muted>
-                <source
-                  src="videos/multi-step-tests-scheduling-execution.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-          </div>
-          <div class="skopos-container">
-            <div class="skopos-description">
-              <h4>
-                <p>And get notified when some of the tests fails.</p>
-              </h4>
-            </div>
-            <div class="skopos-image">
-              <video autoplay loop muted>
-                <source src="videos/notification.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
-          <ul class="actions">
-            <li>
-              <a
-                href="https://skopos-api-monitoring.github.io/"
-                class="button"
-                target="_blank"
-                >Read the Case Study</a
-              >
-            </li>
-          </ul>
-          <!-- Other Projects -->
-        </article>
-      </div>
-      <!-- Other Projects -->
-      <div class="others">
-        <h2 class="major">Other Projects</h2>
-        <article id="other-projects" class="active">
-          <div class="other-project-container">
-            <div class="other-project-card">
-              <h3>WireSnoop</h3>
-              <div class="other-project-description">
-                <p>
-                  A RequestBin clone for debugging webhooks. Built with NginX,
-                  Node.js, PostgreSQL, MongoDB, and React.
-                </p>
-              </div>
-              <div class="other-project-image">
-                <img src="images/wiresnoop.png" alt="" />
-              </div>
-            </div>
-            <div class="other-project-card">
-              <h3>Ergo</h3>
-              <div class="other-project-description">
-                <p>
-                  A CRUD style task manager. Built with Ruby, Sinatra, and
-                  PostgreSQL using a database adapter pattern.
-                </p>
-              </div>
-              <div class="other-project-image">
-                <img src="images/todo-tracker.png" alt="" />
-              </div>
-            </div>
-            <div class="other-project-card">
-              <h3>Shopping Cart</h3>
-              <div class="other-project-description">
-                <p>
-                  A database-backed shopping cart app. Built with React for the
-                  frontend and MongoDB for the backend.
-                </p>
-              </div>
-              <div class="other-project-image">
-                <img src="images/shopping-cart.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="others">
-        <h2 class="major">About Me</h2>
-        <article id="about-me" class="active">
-          <div class="about-me-container">
-            <div class="about-me-description">
-              <h3>
-                I am also a part-time philosopher. I love thinking about the
-                ethical aspects of developing and using modern software.
-                Sometimes, I also think about what my cat is thinking about, and
-                so on...
-              </h3>
-            </div>
-            <div class="about-me-image">
-              <img src="images/mitthu_laying.jpg" alt="" />
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-    <!-- Footer -->
-    <div class="footer">
-      <h2 class="major">Contact</h2>
-      <ul class="icons">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/gagan-sapkota-50724a238/"
-            target="_blank"
-            class="icon brands alt fa-linkedin-in"
-            ><span class="label">LinkedIn</span></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://github.com/aham-oudeis"
-            class="icon brands fa-github"
-            target="_blank"
-            ><span class="label">GitHub</span></a
-          >
-        </li>
-        <li>
-          <a
-            href="/files/gagan_sapkota_resume.pdf"
-            target="_blank"
-            class="icon fa-solid fa-file-pdf"
-            ><span class="label">Resume</span></a
-          >
-        </li>
-      </ul>
-      <p class="copyright">
-        &copy; Gagan Sapkota |<a href="https://html5up.net"> Design: HTML5 UP</a
-        >.
-      </p>
-    </div>
-    <!-- BG -->
-    <div id="bg"></div>
+            </header>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+            <div class="intro-block">
+                <p>
+                    Currently, I am working on simplifying the lifecycle management of cloud-native security fabric at <strong>Aviatrix</strong>. 
+                    My primary focus lies in declarative APIs and orchestration layers using <strong>Go and gRPC</strong>.
+                </p>
+            </div>
+
+            <div class="intro-block">
+                <p>
+                    I love learning and I thrive in environments that require precise reasoning and meticulous research. 
+                </p>
+            </div>
+
+            <div class="intro-block">
+                <p>
+                    Beyond engineering, I enjoy exploring adversarial approaches to LLM coherence, by directing LLMs to reason in cases where evidence is scant.
+                </p>
+                <span class="sidenote">
+                    PhD in Philosophy & BSc in Mathematics. <br>
+                    Fremont, CA (SF Bay Area).
+                </span>
+            </div>
+        </section>
+        <section id="work" class="view" style="display:none;">
+            <header>
+                <h2 class="section-title">Work History</h2>
+            </header>
+
+            <article class="work-entry">
+                <div class="work-header">
+                    <div class="title-row">
+                        <h3>Aviatrix</h3>
+                        <time class="work-date">Oct 2024 — Present</time>
+                        <span class="sidenote">
+                            <strong>Platform-as-a-Service</strong><br>
+                            Network security for on-prem and cloud environments.
+                        </span>
+                    </div>
+                </div>
+                <ul class="work-details">
+                    <li>Led the design of a declarative API and an orchestration layer to provide inspection and protection for egress and lateral traffic, unlocking a key enterprise customer acquisition (Go, gRPC, Protobuf, Temporal).</li>
+                    <li>Designed and built a pipeline to ingest up to a week of flow logs and DNS logs (with a limit set to 100GB to process within an hour) for a security assessment pipeline (Go, gRPC, Kafka, Clickhouse, Temporal, S3).</li>
+                    <li>Collaborated with AWS IAM team to engineer the delegated onboarding workflow (OAuth-like) that simplified account onboarding for customers, replacing the CloudFormation-based onboarding (Go, SNS, SQS, IAM).</li>
+                    <li>Resolved systemic release delays by building a lightweight feature flag system to decouple release cycles from feature completion, brokering a compromise between budget constraints and engineering velocity.</li>
+                    <li>Improved the reliability of L7 proxy service by identifying and resolving a locking bottleneck in the caching layer and adding automated retries on credential expiration.</li>
+                </ul>
+            </article>
+
+            <article class="work-entry">
+                <div class="work-header">
+                    <div class="title-row">
+                        <h3>Illumio</h3>
+                        <time class="work-date">Jul 2023 — Oct 2024</time>
+                        <span class="sidenote">
+                            <strong>Zero-Trust Segmentation</strong><br>
+                            Security solutions to prevent lateral movement.
+                        </span>
+                    </div>
+                </div>
+                <ul class="work-details">
+                    <li>Designed and developed the flow service pipeline, responsible for fetching, aggregating, storing, and querying for flows from AZURE and AWS. Added telemetry data to track the processing stats for each sequence in the workflow. (Go, gRPC, Azure, SQL, Prometheus, Grafana, Observe).</li>
+                    <li>Developed and deployed critical API endpoints that power the aggregator service to efficiently collect diverse resources from multiple data planes and aggregate them to provide insightful visibility into the traffic associated with the cloud resources.</li>
+                    <li>Led the initiative to optimize and scale the flow pipeline to handle high-volume data processing, resulting in the ability to process ~500GB of flow logs per hour.</li>
+                    <li>Reduced the search API latency from 20 seconds to ~6 seconds through a combination of optimized caching and prefetching techniques.</li>
+                </ul>
+            </article>
+            <article class="work-entry">
+                <div class="work-header">
+                    <div class="title-row">
+                        <h3>Skopos</h3>
+                        <time class="work-date">Jan 2022 — Sep 2023</time>
+                        <span class="sidenote">
+                            <strong>API Monitoring Tool</strong><br> 
+                        </span>
+                    </div>
+                </div>
+                <ul class="work-details">
+                    <li>Designed the data model optimized for read-heavy access patterns making judicious use of indexes (Typescript, Prisma, PostgreSQL)</li>
+                    <li>Containerized application and horizontally scaled it using AWS load balancer to enable parallel execution resulting in 10 times faster execution of the tests (Docker, ECS, EC2)</li>
+                </ul>
+            </article>
+        </section>
+                <section id="projects" class="view" style="display:none;">
+                    <header>
+                        <h2 class="section-title">Selected Projects</h2>
+                    </header>
+
+                    <article class="project-entry featured">
+                        <div class="project-header">
+                            <h3>Skopos</h3>
+                            <span class="sidenote">
+                                <strong>Open Source API Monitoring</strong><br>
+                                Testing multi-step workflows in sequence and parallel.
+                            </span>
+                        </div>
+                        
+                        <div class="project-content">
+                            <p>Skopos is an API monitoring tool designed for testing multi-step API workflows in sequence and independent workflows in parallel.</p>
+                            
+                            <div class="media-group">
+                                <figure>
+                                    <video autoplay loop muted playsinline>
+                                        <source src="videos/multi-step-tests-scheduling-execution.mp4" type="video/mp4" />
+                                    </video>
+                                    <figcaption>Define tests for execution on demand or on schedule.</figcaption>
+                                </figure>
+
+                                <figure>
+                                    <video autoplay loop muted playsinline>
+                                        <source src="videos/notification.mp4" type="video/mp4" />
+                                    </video>
+                                    <figcaption>Automated failure notifications for critical flows.</figcaption>
+                                </figure>
+                            </div>
+
+                            <a href="https://skopos-api-monitoring.github.io/" class="external-link" target="_blank" rel="noopener">Read the Case Study ↗</a>
+                        </div>
+                    </article>
+
+                    <hr class="separator">
+
+                    <h3 class="subsection-title">Other Projects</h3>
+                    <div class="projects-grid">
+                        <article class="mini-card">
+                            <h4>WireSnoop</h4>
+                            <p>A RequestBin clone for debugging webhooks. Built with NginX, Node.js, PostgreSQL, MongoDB, and React.</p>
+                            <img src="images/wiresnoop.png" alt="WireSnoop Interface" />
+                        </article>
+                    </div>
+                </section>
+        <section id="notes" class="view" style="display:none;"></section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
 </html>
